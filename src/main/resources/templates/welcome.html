@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .welcome-message {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="welcome-message">
+    <h1>Welcome!</h1>
+    <p>Today is: <span th:text="${today}"></span></p>
+</div>
+</body>
+</html>
